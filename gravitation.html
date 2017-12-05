@@ -57,7 +57,7 @@ return masse2
 //Cette fonction calcul la force de gravitation selon la distance et la masse des deux objets
 //entrées : a,b,masse1 et masse2 sont des nombre réels
 //sortie : la fonction retourne le réel gravitation
-function metier(a,b,masse1,masse2) {
+function metier(a,masse1,masse2) {
 	gravitation = (6.67*10**(-11))*((masse1*masse2)/(a**2))
 	console.log(gravitation)
 	return gravitation
@@ -81,7 +81,7 @@ function executeFonction(){
 	masse1= entreMasse1()
 	masse2= entreMasse2()
 	while(a<b){
-		gravitation = metier(a,b,masse1,masse2)
+		gravitation = metier(a,masse1,masse2)
 		affiche(gravitation,a)
 		a=a*2
 	}
